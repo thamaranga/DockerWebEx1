@@ -16,9 +16,9 @@ Running the web application container -> docker container run --name web-app -d 
 Then we need to create a seperate network for communicate among above two containers.
 Let's create a bridge network (docker default network type) .We can use  this newly created network for communicating among containers. -> docker network create app-network
 
-docker network connect app-network web-app
+Connect web application container to app-network ->docker network connect app-network web-app
 
-docker network connect app-network app-db
+Connect mysql container to app-network > docker network connect app-network app-db
 
 http://localhost:8081/DockerWebEx1/ -> Access our web application in web browser.
 
