@@ -14,6 +14,7 @@ public class DBConnectionUtility {
 
 			Class.forName ("com.mysql.cj.jdbc.Driver").newInstance();
 			//conn = DriverManager.getConnection("jdbc:mysql://localhost/school", "root", "root123");
+			//Here we can access school database using  mysql container name (app-db) since we have connected both web application and mysql container to a seperate network.
 			conn = DriverManager.getConnection("jdbc:mysql://app-db/school", "root", "root123");
 
 
