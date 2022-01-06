@@ -6,7 +6,9 @@ Get mysql image  -> docker pull mysql
 
 Running a mysql container -> docker container run --name app-db -d -e MYSQL_ROOT_PASSWORD=root123 mysql
 
-Then log into this mysql container and  execute the  sql commands in db.sql.
+Then log into this mysql container and  execute the  sql commands in db.sql. 
+(docker container exec -it dfcf4a6c396c sh)
+Here dfcf4a6c396c means mysql docker container id
 
 Create the  web application image ->docker image build -t my-web-app:v1 .
 
