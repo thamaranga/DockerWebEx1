@@ -12,7 +12,7 @@ Here dfcf4a6c396c means mysql docker container id
 
 Create the  web application image ->docker image build -t my-web-app:v1 .
 
-Running the web application container -> docker container run --name web-app -d  -p 8081:8080  web-app:v1
+Running the web application container -> docker container run --name web-app -d  -p 8081:8080  my-web-app:v1
 (In above command 8081 means host machine port. 8080 means container port)
 
 Then we need to create a seperate network for communicate among above two containers.

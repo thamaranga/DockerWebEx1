@@ -1,3 +1,4 @@
+mysql -u root -p root123
 
 create database school;
 
